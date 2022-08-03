@@ -17,43 +17,37 @@
 
 <body>
     <div class="container">
-        <div class="weather-app">
-            <h1>
-                New York
-            </h1>
-            <ul>
-                <li>
-                    Friday 05:00
-                </li>
-                <li>
-                    Clear
-                </li>
-            </ul>
-            <div class="row">
-                <div class="col-6">
-                    <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear">
-                    12 °C | °F
-                </div>
-                <div class="col-6">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <div class="overview">
+                    <h1 id="city"></h1>
                     <ul>
-                        <li>
-                            Precipitation: 0%
-                        </li>
-                        <li>
-                            Humidity: 30%
-                        </li>
-                        <li>
-                            Wind:14 km/h
-                        </li>
+                        <li>Last updated: <span id="date"></span></li>
+                        <li id="description"></li>
                     </ul>
                 </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="clearfix weather-temperature">
+                            <img src="" alt="Clear" id="icon" class="float-left" />
+                            <div class="float-left">
+                                <strong id="temperature"></strong><span class="units"> °C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span> m/h</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <small>
+                <a href="https://github.com/IraPolchanin/vanilla-weatherApp" target="_blank">Open-source code</a>
+                by Iryna Polchaninova
+            </small>
         </div>
-        <small>
-            <a href="https://github.com/IraPolchanin/vanilla-weatherApp" target="_blank">Open-sourse code</a> by
-            Iryna
-            Polchaninova
-        </small>
     </div>
     <script src="src/app.js"></script>
 </body>
